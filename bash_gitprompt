@@ -60,4 +60,5 @@ function prompt_func() {
     fi
 }
 
-PROMPT_COMMAND=prompt_func
+#PROMPT_COMMAND=prompt_func
+PROMPT_COMMAND='echo -ne "${USER}@$(hostname -s):${PWD}\n";prompt_func'
